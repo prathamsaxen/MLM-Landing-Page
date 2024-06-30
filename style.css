@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -33,6 +36,10 @@
         font-family: Poppins;
         text-transform: uppercase;
         cursor: pointer;
+        font-family: 'Quicksand';
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
     }
     nav ul li:hover{
         color: #328897;
@@ -51,27 +58,67 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
-    gap: 40px;
+    gap: 20px;
 }
 .content-banner-card{
     border: 1px solid #328897;
-    width: 350px;
+    width: 400px;
     padding: 20px;
     border-radius: 6px;
     gap: 10px;
     display: flex;
     flex-direction: column;
+    
     .banner-card-header{
         min-height: 35px;
         display: flex;
         align-items: center;
         gap: 10px;
     }
+    
     .banner-card-header p{
         font-size: 1.4rem;
         color: #328897;
+        color: #333;
+        font-weight: 600;
+        line-height: 1.4;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
     }
 }
+.content-banner-card-paragraph
+{
+    line-height: 24px;
+    font-size: 14px;
+    color: #8A8A93;
+}
+
+.about-us-section{
+    background-color: #FFF;
+    padding: 100px;
+}
+.about-us-container{
+    min-height: 500px;
+    display: flex;
+}
+
+.content-side-container,.image-side-container{
+    width: 50%;
+    background: #FFF;
+}
+.image-side-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        border: 1px solid #333;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+}
+
