@@ -191,3 +191,23 @@ body{
         margin: 0;
     }
 }
+
+.achievements-wrapper{
+    /* border: 2px solid red; */
+    min-height: 242.2px;
+    position: relative;
+    background-image: url("https://rainbowdesign.in/themes/Abrukain/Light-HTML/img/bg/counter-bg.jpg");
+    background-size: cover;
+    background-position: top center;
+    z-index: 0;
+}
+.achievements-wrapper::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(15, 116, 134, 0.6);
+    z-index: -1;
+}
