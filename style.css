@@ -31,9 +31,19 @@
         gap: 25px;
     }
     nav ul li{
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-family: Poppins;
         text-transform: uppercase;
         cursor: pointer;
+    }
+    nav ul li:hover{
+        color: #328897;
+    }
+}
+
+.banner-Image{
+    width: 100vw;
+    img{
+        width: 100%;
     }
 }
