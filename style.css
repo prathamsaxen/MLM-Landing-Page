@@ -525,6 +525,9 @@ body{
                 border-radius: 4px;
                 color: #fff;
             }
+            input::placeholder{
+                color: rgb(192, 190, 190);
+            }
             a{
                 background-color: #ff5a60;
                 color: #fff;
