@@ -5,9 +5,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #EFF2F4;
-
+    font-family: Quicksand;
+    
 }
+
+body{
+    background-color: #EFF2F4;
+}
+
 .navbar{
     padding-top: 2px;
     padding-bottom: 2px;
@@ -102,14 +107,17 @@
     padding: 100px;
 }
 .about-us-container{
-    min-height: 500px;
     display: flex;
+    /* border: 2px solid red; */
+    align-items: space-between;
+
 }
 
 .content-side-container,.image-side-container{
     width: 50%;
     background: #FFF;
 }
+
 .image-side-container{
     display: flex;
     justify-content: center;
@@ -122,3 +130,64 @@
     }
 }
 
+.content-side-container{
+    /* border: 2px solid red; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    h2{
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    p{
+        line-height: 24px;
+        font-size: 14px;
+        color: #8A8A93;
+        margin-bottom: 1rem;
+    }
+}
+
+.cards-container-about-us{
+    display: flex;
+    justify-content: space-between;
+}
+.cards-container-about-us:first-of-type{
+    margin-bottom: 1.5rem;
+}
+.card-about-us{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    i{
+        border: 2px solid #0f7486;
+        padding: 15px;
+        border-radius: 50%;
+        color: #0f7486;
+        font-size: 1.5rem;
+    }
+}
+.content-card-about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    h5{
+        font-weight: 600;
+        font-family: 'Quicksand';
+
+        color: #333;
+        padding: 0px;
+        line-height: 1.4;
+        font-size: 1.25rem;
+    }
+    p{
+
+        font-size: 14px;
+        color: #8A8A93;
+        margin: 0;
+    }
+}
