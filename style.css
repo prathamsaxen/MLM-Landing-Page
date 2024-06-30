@@ -120,7 +120,7 @@ body{
 
 .image-side-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     img{
         border: 1px solid #333;
@@ -210,4 +210,45 @@ body{
     top: 0px;
     background-color: rgba(15, 116, 134, 0.6);
     z-index: -1;
+}
+
+.achievement-container{
+    /* border: 2px solid red; */
+    height: 242px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achievement-container-card{
+    /* border: 2px solid green; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-direction: column;
+    gap: 6px;
+    border-right: 1px solid rgba(255,255,255,0.3);
+    h2{
+        color: #fff !important;
+        font-size: 50px;
+        line-height: 36px;
+        position: relative;
+        padding-bottom: 18px;
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 0px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+}
+.achievement-container-card:last-of-type{
+    border: none;
 }
