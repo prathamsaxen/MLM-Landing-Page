@@ -592,7 +592,12 @@ body{
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+@media screen and (max-width:768px)
+{
+
+
     nav {
         display: none !important;
         border: 2px solid red !important;
@@ -624,11 +629,18 @@ body{
         width: 100%;
     }
     .cards-container-about-us{
-        flex-direction: column;
+        flex-direction: row;
+    }
+    .content-side-container {
+        h2{
+            text-align: center;
+        }
     }
     .card-about-us{
         width: 100%;
+        margin: auto;
         margin-bottom: 1rem;
+        width: max-content;
     }
     .cards-container-about-us:first-of-type{
         margin-bottom: 0;
@@ -673,6 +685,7 @@ body{
     }
     .blog-cards-section{
         gap: 20px;
+        justify-content: center !important;
     }
     .subscribe-container{
         flex-direction: column;
@@ -702,5 +715,11 @@ body{
     }
     .footer-navigations{
         display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cards-container-about-us{
+        flex-direction: column;
     }
 }
