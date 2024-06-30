@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 .navbar{
-    border: 2px solid red;
-    min-height: 55px;
+    /* border: 2px solid red; */
+    /* min-height: 55px; */
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #EFF2F4;
+    nav{
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        /* border: 2px solid red; */
+        gap: 25px;
+    }
+    nav ul li{
+        font-size: 1.2rem;
+        font-family: Poppins;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
 }
