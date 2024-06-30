@@ -325,12 +325,82 @@ body{
             letter-spacing: 1px;
             font-family: 'Quicksand';
             text-transform: uppercase;
-            text-decoration: none;
+            text-decoration:none;
             display: inline-block;
         }
+
         
     }
 }
 .services-card:hover{
      border: 1px solid rgba(15, 116, 134, 0.6);
+}
+
+.care-section{
+    /* border: 2px solid red; */
+    position: relative;
+    background-image: url("https://rainbowdesign.in/themes/Abrukain/Light-HTML/img/bg/call-to-action-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    z-index: 0;
+    height: 430px;
+    width: 100%;
+}
+.care-section-container{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.care-section-container::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.row-container{
+    /* border: 2px solid green; */
+    width: 80%;
+    div{
+        /* border: 2px solid salmon; */
+        width: 50%;
+        h2{
+            color: #fff;
+            font-weight: 800;
+            font-size: 50px;
+            margin-bottom: 6px;
+        }
+        h5{
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p{
+            color: #fff;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+        a{
+            color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0f7486;
+        }
+    }
 }
