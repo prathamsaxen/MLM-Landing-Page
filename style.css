@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+:root{
+    --primaryColor:#6777ef;
+    --backgroundPrimaryColor:rgba(103, 119, 239, 0.6);
+}
+
 
 *{
     padding: 0;
@@ -47,7 +52,7 @@ body{
         font-weight: 500;
     }
     nav ul li:hover{
-        color: #328897;
+        color: var(--primaryColor);
     }
 }
 
@@ -69,7 +74,7 @@ body{
     gap: 20px;
 }
 .content-banner-card{
-    border: 1px solid #328897;
+    border: 1px solid var(--primaryColor);
     width: 400px;
     padding: 20px;
     border-radius: 6px;
@@ -82,11 +87,14 @@ body{
         display: flex;
         align-items: center;
         gap: 10px;
+        i{
+            color: var(--primaryColor) !important;
+        }
     }
     
     .banner-card-header p{
         font-size: 1.4rem;
-        color: #328897;
+        color: var(--primaryColor);
         color: #333;
         font-weight: 600;
         line-height: 1.4;
@@ -163,10 +171,10 @@ body{
     align-items: center;
     gap: 15px;
     i{
-        border: 2px solid #0f7486;
+        border: 2px solid var(--primaryColor);
         padding: 15px;
         border-radius: 50%;
-        color: #0f7486;
+        color: var(--primaryColor);
         font-size: 1.5rem;
     }
 }
@@ -208,7 +216,7 @@ body{
     height: 100%;
     left: 0px;
     top: 0px;
-    background-color: rgba(15, 116, 134, 0.6);
+    background-color: var(--backgroundPrimaryColor);
     z-index: -1;
 }
 
@@ -272,7 +280,7 @@ body{
         padding: 14px 0px;
         span{
             position: relative;
-            color: #0f7486;
+            color: var(--primaryColor);
         }
     }
     .services-card-container{
@@ -401,7 +409,7 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    background-color: #0f7486;
+    background-color: var(--primaryColor);
         }
     }
 }
@@ -425,7 +433,7 @@ body{
         padding: 14px 0px;
         span{
             position: relative;
-            color: #0f7486;
+            color: var(--primaryColor);
         }
     }
     .blog-cards-section{
@@ -456,7 +464,7 @@ body{
                 font-size: 12px;
                 line-height: 1.2;
                 letter-spacing: .1em;
-                color: #0f7486;
+                color: var(--primaryColor);
                 margin-bottom: 20px;
                 margin-top: 12px;
             }
@@ -484,7 +492,7 @@ body{
                 text-transform: uppercase;
                 text-decoration: none;
                 display: inline-block;
-                background-color: #0f7486;
+                background-color: var(--primaryColor);
             }
         }
     }
@@ -493,7 +501,7 @@ body{
 .subscribe-section{
     /* border: 2px solid red; */
     height: 205px;
-    background-color: #0f7486;
+    background-color: var(--primaryColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -567,6 +575,9 @@ body{
         gap: 20px;
         color: white;
         cursor: pointer;
+        a{
+            color: white;
+        }
     }
 }
 .footer-navigations{
