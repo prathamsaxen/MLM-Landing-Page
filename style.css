@@ -292,7 +292,8 @@ body{
         /* border: 2px solid red; */
         border:1px solid #eff2f4;
         border-radius: 6px;
-        width: 400px;
+        max-width: 320px;
+        min-width: 200px;
         padding: 30px;
         transition: all .5s ease-in-out;
         i{
@@ -441,7 +442,7 @@ body{
         .blog-cards{
             border:1px solid rgba(0,0,0,0.1);
             min-height: 200px;
-            max-width: 450px;
+            max-width: 320px;
             padding: 20px;
             h3{
                 color: #333;
@@ -723,3 +724,62 @@ body{
         flex-direction: column;
     }
 }
+
+@media screen and (min-width:769px) and (max-width:1000px)
+{
+    .navbar{
+        /* bord er: 2px solid red; */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .banner-card-header p{
+        font-size: 1rem !important;
+    }
+
+    .about-us-section{
+        padding: 10px !important;
+    }
+    .about-us-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .content-side-container,.image-side-container{
+        width: 90%;
+        margin:0;
+    }
+    .image-side-container{
+        justify-content: center;
+    }
+    .services-card-container{
+        justify-content: center !important;
+    }
+    .row-container {
+        div{
+            h2{
+                font-size: 33px;
+            }
+            h5{
+                font-size: 15px;
+            }
+            p{
+                line-height: 22px;
+            }
+        }
+    }
+    .blog-cards-section{
+        justify-content: center !important;
+        gap: 20px;
+    }
+    .subscribe-section {
+        .subscribe-container{
+            flex-direction: column;
+            gap: 20px;
+            .container-input-section{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
